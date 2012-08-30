@@ -1,0 +1,9 @@
+; IIS.def : Declares the module parameters for the DLL.
+
+LIBRARY      "IIS"
+DESCRIPTION  'IIS Windows Dynamic Link Library'
+
+EXPORTS
+    ; All tag request procedures should be listed below
+	
+	ProcessTagRequest	@1

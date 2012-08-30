@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: IIS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/IIS.res" /d "NDEBUG" "C:\projects\ihtk\IIS\IIS\IIS.rc"" 
+Creating temporary file "C:\DOCUME~1\Min\LOCALS~1\Temp\RSP697.tmp" with contents
+[
+/nologo /G5 /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /Fp"Release/IIS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\projects\ihtk\IIS\IIS\IIS.cpp"
+"C:\projects\ihtk\IIS\IIS\Request.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Min\LOCALS~1\Temp\RSP697.tmp" 
+Creating temporary file "C:\DOCUME~1\Min\LOCALS~1\Temp\RSP698.tmp" with contents
+[
+/nologo /G5 /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_USRDLL" /Fp"Release/IIS.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\projects\ihtk\IIS\IIS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Min\LOCALS~1\Temp\RSP698.tmp" 
+Creating temporary file "C:\DOCUME~1\Min\LOCALS~1\Temp\RSP699.tmp" with contents
+[
+adsiid.lib activeds.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/IIS.pdb" /machine:I386 /def:".\IIS.def" /out:"Release/IIS.dll" /implib:"Release/IIS.lib" 
+.\Release\IIS.obj
+.\Release\Request.obj
+.\Release\StdAfx.obj
+.\Release\IIS.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Min\LOCALS~1\Temp\RSP699.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+IIS.cpp
+Request.cpp
+Generating Code...
+Linking...
+   Creating library Release/IIS.lib and object Release/IIS.exp
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+Creating temporary file "C:\DOCUME~1\Min\LOCALS~1\Temp\RSP69D.bat" with contents
+[
+@echo off
+copy  Release\*.dll    ..\..\
+]
+Creating command line "C:\DOCUME~1\Min\LOCALS~1\Temp\RSP69D.bat"
+
+Release\IIS.dll
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+IIS.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
