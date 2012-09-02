@@ -32,3 +32,6 @@
 Release/
 Release64/
 Debug/
+ipch/
+
+*.suo
